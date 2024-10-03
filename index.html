@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Price Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Price Calculator</h1>
+        <form id="calculator">
+            <div class="input-group">
+                <label for="vendorPrice">Vendor Price (Rs):</label>
+                <input type="number" id="vendorPrice" required>
+            </div>
+            <div class="input-group">
+                <label for="vendorWeight">Vendor Weight (g):</label>
+                <input type="number" id="vendorWeight" required>
+            </div>
+            <div class="input-group">
+                <label for="calculationType">Calculation Type:</label>
+                <select id="calculationType">
+                    <option value="weight">Calculate Weight for a Given Price</option>
+                    <option value="price">Calculate Price for a Given Weight</option>
+                </select>
+            </div>
+            <div class="input-group" id="weightInput">
+                <label for="desiredWeight">Desired Weight (g):</label>
+                <input type="number" id="desiredWeight">
+            </div>
+            <div class="input-group" id="priceInput">
+                <label for="desiredPrice">Desired Price (Rs):</label>
+                <input type="number" id="desiredPrice">
+            </div>
+            <button type="submit">Calculate</button>
+            <div id="result"></div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
